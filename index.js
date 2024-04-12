@@ -12,41 +12,41 @@ fetch("index.json")
         data.data.forEach((dogs) => {
             document.querySelector(".output").innerHTML += `
             <div>
-            <table>
+            <table class="border border-slate-300">
                 <tr>
-                    <td>Name</td>
+                    <td><strong>Name</strong></td>
                     <td>${dogs.name}</td>
                 </tr>
                     <tr>
-                    <td>Life Span</td>
+                    <td><strong>Life Span</Strong></td>
                     <td>${dogs.life_span}</td>
                 </tr>
                     <tr>
-                    <td>Origin</td>
+                    <td><strong>Origin</strong></td>
                     <td>${dogs.origin}</td>
                 </tr>
                     <tr>
-                    <td>Temperament</td>
+                    <td><strong>Temperament</strong></td>
                     <td>${dogs.temperament}</td>
                 </tr>
                     <tr>
-                    <td>Weight (kg)</td>
+                    <td><strong>Weight</strong></td>
                     <td>${dogs.weight.imperial}</td>
                 </tr>
                     <tr>
-                    <td>Bred For</td>
+                    <td><strong>Bred For</strong></td>
                     <td>${dogs.bred_for}</td>
                 </tr>
                     <tr>
-                    <td>Breed Group</td>
+                    <td><strong>Breed Group</strong></td>
                     <td>${dogs.breed_group}</td>
                 </tr>
                     <tr>
-                    <td>Country Code</td>
+                    <td><strong>Country Code</strong></td>
                     <td>${dogs.country_code}</td>
                 </tr>
                     <tr>
-                    <td>Height (kg)</td>
+                    <td><strong>Height</strong></td>
                     <td>${dogs.height.imperial}</td>
                 </tr>
             </table>
@@ -55,49 +55,3 @@ fetch("index.json")
             `
 })
 })
-
-// fetch("index.json")
-// .then((response) => {
-// return response.json()
-// }).then((dogdata) => {
-// document.querySelector(".output").innerHTML = `
-//     <table>
-//         <tr>
-//             <td>Name</td>
-//             <td>${data[0].name}</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//             <tr>
-//             <td>content</td>
-//             <td>content</td>
-//         </tr>
-//     </table>
-//     `
-// })
